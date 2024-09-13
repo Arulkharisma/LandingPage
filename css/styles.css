@@ -85,13 +85,21 @@ body {
     width: max-content;
 }
 
-hr {
+.hr-nav {
     border: 0;
     clear: both;
     display: block;
     width: 100%;
     background-color: #000000;
-    height: 1px;
+    height: 2px;
+    margin: 0;
+}
+
+.hr-footer{
+    border: 0;
+    width: 100%;
+    background-color: #ffffff;
+    height: 2px;
     margin: 0;
 }
 
@@ -154,7 +162,7 @@ footer {
 }
 
 @media only screen and (max-width: 992px) {
-    hr {
+    .hr-nav {
         display: none;
     }
 
