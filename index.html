@@ -18,16 +18,20 @@
         <div class="container">
             <div class="tampilan-mobile">
                 <a id="logo-desktop" class="navbar-brand fw-bold" href="/">
-                    <img id="logonavbar" src="assets/image/re branding logo funvita.png" alt="Logo" width="80"
-                        height="60" class="d-inline-block align-text-center">
+                    <img id="logonavbar" src="assets/image/re branding logo funvita.png" alt="Logo" width="80" height="60"
+                        class="d-inline-block align-text-center">
                 </a>
-                <button class="navbar-toggler h-75 my-auto" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
-            <div class="collapse navbar-collapse nav-mobile" id="navbarSupportedContent">
+            <div class="offcanvas offcanvas-start nav-mobile p-3" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
                 <div class="d-flex flex-column w-100 ">
                     <div class="dekstop-nav">
                         <a id="logo-mobile" class="navbar-brand fw-bold" href="/">
@@ -36,14 +40,14 @@
                         </a>
                         <ul class="navbar-nav mb-2 mb-lg-0">
                             <li class="nav-item dropdown has-megamenu">
-                                <a class="nav-link dropdown-toggle fw-bold" href="#" data-bs-toggle="dropdown"> Mega menu </a>
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> Mega
+                                    menu </a>
                                 <div class="dropdown-menu megamenu px-2 py-3" role="menu">
                                     <div class="row container m-auto bg-blur">
-                                        <div class="col-12 
-                                            col-md-4">
+                                        <div class="col-12 col-lg-4">
                                             <h6 class="dropdown-header fs-6 fw-bold">Compute<img
-                                                    src="./assets/icon/chart-histogram.png" width="17"
-                                                    alt="icon compute" srcset="" class="ms-1"></h6>
+                                                    src="./assets/icon/chart-histogram.png" width="17" alt="icon compute"
+                                                    srcset="" class="ms-1"></h6>
                                             <ul class="list-unstyled">
                                                 <li><a class="dropdown-item" href="#">Droplets</a></li>
                                                 <li><a class="dropdown-item" href="#">Kubernetes</a></li>
@@ -59,7 +63,7 @@
                                                 <li><a class="dropdown-item" href="#">Load Balancers</a></li>
                                             </ul>
                                         </div>
-                                        <div class="col-12 col-lg-8 col-md-8 d-flex flex-wrap ps-0">
+                                        <div class="col-12 col-lg-8 d-flex flex-wrap ps-0">
                                             <div class="container">
                                                 <div class="row">
                                                     <div class="col-12 col-lg-4">
@@ -75,7 +79,8 @@
                                                         </ul>
                                                         <h6 class="dropdown-header mt-4 fs-6 fw-bold">Featured Products
                                                             <img src="./assets/icon/calendar.png" width="17"
-                                                                alt="icon compute" srcset="" class="ms-1"></h6>
+                                                                alt="icon compute" srcset="" class="ms-1">
+                                                        </h6>
                                                         <ul class="list-unstyled mb-4">
                                                             <li><a class="dropdown-item" href="#">Droplets</a></li>
                                                             <li><a class="dropdown-item" href="#">Kubernetes</a></li>
@@ -96,8 +101,9 @@
                                                             <li><a class="dropdown-item" href="#">App Platform</a></li>
                                                         </ul>
                                                         <h6 class="dropdown-header mt-4 fs-6 fw-bold">Featured Products
-                                                            <img src="./assets/icon/globe.png" width="17"
-                                                                alt="icon compute" srcset="" class="ms-1"></h6>
+                                                            <img src="./assets/icon/globe.png" width="17" alt="icon compute"
+                                                                srcset="" class="ms-1">
+                                                        </h6>
                                                         <ul class="list-unstyled mb-4">
                                                             <li><a class="dropdown-item" href="#">Droplets</a></li>
                                                             <li><a class="dropdown-item" href="#">Kubernetes</a></li>
@@ -135,18 +141,17 @@
                                 </div> <!-- dropdown-mega-menu.// -->
                             </li>
                             <li class="nav-item mynav">
-                                <a class="nav-link fw-bold" href="#introduce">Introduce</a>
+                                <a class="nav-link" href="#introduce">Introduce</a>
                             </li>
                         </ul>
                         <div class="d-flex align-items-center gap-4 tampilan-column">
                             <a href="#" class="text-decoration-none">Login</a>
-                            <button class="px-3 py-2 border-0 rounded-1 fw-bold text-white button-blue">Kontak
-                                Kami</button>
+                            <button class="px-3 py-2 border-0 rounded-1 fw-bold text-white button-blue">Daftar</button>
                         </div>
                     </div>
                     <hr class="hr-nav">
                     <div class=" justify-content-center">
-                        <ul class="navbar-nav mb-2 mb-lg-0 gap-4 justify-content-center">
+                        <ul class="navbar-nav mb-2 mb-lg-0 gap-3 justify-content-center">
                             <li class="nav-item">
                                 <a class="nav-link " aria-current="page" href="#">Home</a>
                             </li>
